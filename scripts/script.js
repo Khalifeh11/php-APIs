@@ -17,7 +17,7 @@ async function fetchComputeAPI() {
             `http://localhost/php-assignment/APIs/computeAPI.php?x=${xInput.value}&y=${yInput.value}`,
         );
         const data = await response.json();
-        result.textContent = "result: " + data.compute
+        result.textContent = data.compute
         return data   
     }catch(error){
         console.log(error);
@@ -42,7 +42,7 @@ async function fetchPalindromeAPI() {
         );
         const data = await response.json();
         console.log(data);
-        palindromeResult.textContent = "result: " + data.Palindrome 
+        palindromeResult.textContent = data.Palindrome 
         return data   
     }catch(error){
         console.log(error);
@@ -69,7 +69,7 @@ async function fetchTrimApi() {
         );
         const data = await response.json();
         console.log(data);
-        trimResult.textContent = "New String: " + data.newString;
+        trimResult.textContent = data.newString;
         return data   
     }catch(error){
         console.log(error);
@@ -94,7 +94,7 @@ async function fetchPasswordApi() {
             `http://localhost/php-assignment/APIs/passwordAPI.php?password=${passwordInput.value}`,
         );
         const data = await response.json();
-        passwordCheck.textContent = "Is Valid: " + data.viablePassword;
+        passwordCheck.textContent = data.viablePassword;
         return data   
     }catch(error){
         console.log(error);
