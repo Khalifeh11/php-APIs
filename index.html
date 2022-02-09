@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CALLS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>equation = 2 * x + y % 2</h1>
+    <form id="compute-form">
+        <label for="xinput">X:</label>
+        <input type="number" id="xInput" name="xinput" placeholder="enter number"><br><br>
+        <label for="yinput">Y:</label>
+        <input type="number" id="yInput" name="yinput" placeholder="enter number"><br><br>
+        <input type="submit" value="Submit" id="button">
+    </form>
+    <h1 id="result">result:</h1>
+    <hr>
+    <h1>Palindrome</h1>
+    <form id="palindrome-form">
+        <label for="string">String:</label>
+        <input type="text" id="palindrome-string" name="PalindromeString" placeholder="enter string"><br><br>
+        <input type="submit" value="Submit" id="palindrome-button">
+    </form>
+    <h1 id="palindrome-result">result:</h1>
+    <hr>
+
+    <h1>Space Remover</h1>
+    <form id="trim-form">
+        <label for="string">Remove space from string:</label>
+        <input type="text" id="trim-string" name="trimmedString" placeholder="enter string"><br><br>
+        <input type="submit" value="Submit" id="trim-button">
+    </form>
+    <h1 id="trim-result">New String :</h1>
+    <hr>
+
+    <h1>Password checker</h1>
+    <form id="password-form">
+        <label for="password">password:</label>
+        <input type="password" id="password-input" name="password" placeholder="enter password"><br><br>
+        <input type="submit" value="Submit" id="password-button">
+    </form>
+    <h1 id="password-checker">is valid: </h1>
+    <hr>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -3,9 +3,9 @@
 $x = $_GET["x"];
 $y = $_GET["y"];
 
-
-$calculation = ["compute" => 2 * $x + $y % 2];
-
+ 
+$equation = 2 * $x + $y % 2;
+$calculation = ["compute" => $equation];
 echo(json_encode($calculation));
 
 

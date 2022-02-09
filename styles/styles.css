@@ -1,0 +1,21 @@
+body{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#trim-button, #button, #palindrome-button, #password-button{
+    padding: 0.1rem 2rem;
+    background: rgb(57, 134, 223);
+    font-family: 'Source Serif 4', sans-serif;
+    border-radius: 8px;
+    cursor: pointer; 
+}
+
+#trim-button:hover, #button:hover, #palindrome-button:hover, #password-button:hover{
+    color: #000000;
+    border: thin solid #000000;
+}
+
+hr{
+    width: 50%;
+}
