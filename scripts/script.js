@@ -94,7 +94,7 @@ async function fetchPasswordApi() {
             `http://localhost/php-assignment/APIs/passwordAPI.php?password=${passwordInput.value}`,
         );
         const data = await response.json();
-        passwordCheck.textContent = "is valid: " + data.viablePassword;
+        passwordCheck.textContent = "Is Valid: " + data.viablePassword;
         return data   
     }catch(error){
         console.log(error);
