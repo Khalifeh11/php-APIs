@@ -11,43 +11,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title"><i>Welcome to random API CALLS</i></h1>
-    <h1>equation = 2 * x + y % 2</h1>
-    <form id="compute-form">
-        <label for="xinput">X:</label>
-        <input type="number" id="xInput" name="xinput" placeholder="enter number"><br><br>
-        <label for="yinput">Y:</label>
-        <input type="number" id="yInput" name="yinput" placeholder="enter number"><br><br>
-        <input type="submit" value="Submit" id="button">
-    </form>
-    <h1 id="result">result:</h1>
-    <hr>
-    <h1>Palindrome</h1>
-    <form id="palindrome-form">
-        <label for="string">Is this a palindrome:</label>
-        <input type="text" id="palindrome-string" name="PalindromeString" placeholder="enter string"><br><br>
-        <input type="submit" value="Submit" id="palindrome-button">
-    </form>
-    <h1 id="palindrome-result">result:</h1>
-    <hr>
+    <div id="api-divs">
+        <h1 id="title"><i>Welcome to my API CALLS</i></h1>
+    <div id="compute-div">
+        <h1>API 1: Compute equation</h1>
+        <h3>Gets two inputs (x and y) and returns the result of the following expression: 2 * x + y % 2</h3>
+        <form id="compute-form">
+            <label for="xinput">X:</label>
+            <input type="number" id="xInput" name="xinput" placeholder="enter number"><br><br>
+            <label for="yinput">Y:</label>
+            <input type="number" id="yInput" name="yinput" placeholder="enter number"><br><br>
+            <input type="submit" value="Submit" id="button">
+        </form>
+        <h1 id="result">result:</h1>
+    </div>
+    <div id="palindrome-div">
+        <h1>API 2: Palindrome checker</h1>
+        <h3>Takes a string as a parameter and returns if the string is palindrome or not.</h3>
+        <!-- <hr> -->
+        <form id="palindrome-form">
+            <label for="string">Is this a palindrome:</label>
+            <input type="text" id="palindrome-string" name="PalindromeString" placeholder="enter string"><br><br>
+            <input type="submit" value="Submit" id="palindrome-button">
+        </form>
+        <h1 id="palindrome-result">result:</h1>
+    </div>
+  
+    <!-- <hr> -->
+    <div id="trim-div">
+        <h1>API 3: Space Remover</h1>
+        <h3>Takes a string as an and returns a new string without extra blank spaces
+        </h3>
+        <form id="trim-form">
+            <label for="string">String:</label>
+            <input type="text" id="trim-string" name="trimmedString" placeholder="enter string"><br><br>
+            <input type="submit" value="Submit" id="trim-button">
+        </form>
+        <h1 id="trim-result">New String :</h1>
+    </div>
+    
+    <!-- <hr> -->
 
-    <h1>Space Remover</h1>
-    <form id="trim-form">
-        <label for="string">Remove space from string:</label>
-        <input type="text" id="trim-string" name="trimmedString" placeholder="enter string"><br><br>
-        <input type="submit" value="Submit" id="trim-button">
-    </form>
-    <h1 id="trim-result">New String :</h1>
-    <hr>
-
-    <h1>Password checker</h1>
+    <div id="password-div">
+    <h1>API 4: Password checker</h1>
+    <h3>Gets a string (representing a password) and checks if password has minimum 8 characters, contains numbers and digits and return boolean</h3>
     <form id="password-form">
         <label for="password">password:</label>
         <input type="password" id="password-input" name="password" placeholder="enter password"><br><br>
         <input type="submit" value="Submit" id="password-button">
     </form>
     <h1 id="password-checker">is valid: </h1>
-    <hr>
+    </div>
+    <!-- <hr> -->
+    </div>
+    
 
 <script src="./scripts/script.js"></script>
 </body>

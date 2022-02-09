@@ -2,6 +2,16 @@ body{
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
+api-divs{
+    display: flex;
+    flex-direction: row;
+}
+
+#compute-div, #palindrome-div, #trim-div, #password-div {
+    background-color:aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+}
 
 #title{
     font-size: 3rem;
