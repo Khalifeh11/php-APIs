@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+
 
 $password = $_GET["password"];
 $hash = hash('sha256',$password);
