@@ -3,6 +3,15 @@ body{
     text-align: center;
 }
 
+#title{
+    font-size: 3rem;
+}
+
+label{
+    font-weight: 500;
+    font-style: oblique;
+}
+
 #trim-button, #button, #palindrome-button, #password-button{
     padding: 0.1rem 2rem;
     background: rgb(57, 134, 223);
@@ -14,8 +23,13 @@ body{
 #trim-button:hover, #button:hover, #palindrome-button:hover, #password-button:hover{
     color: #000000;
     border: thin solid #000000;
+    background: rgb(77, 153, 240);
 }
 
 hr{
     width: 50%;
+}
+input {
+    border-radius: 12px;
+    text-align: center;
 }
