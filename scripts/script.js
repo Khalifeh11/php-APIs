@@ -113,7 +113,8 @@ async function fetchPasswordApi() {
         const data = await response.json();
         console.log(data);
         //in passwordAPI.php if password input length < 8 viable password = 1
-        if (data.viablePassword == false && passwordInput.length < 8){
+        console.log(passwordInput.value);
+        if (data.viablePassword == false && passwordInput.value.length < 8){
             alert("password should contain at least 8 characters");
         }else if(data.viablePassword == true){
             passwordCheck.textContent = "Success";
