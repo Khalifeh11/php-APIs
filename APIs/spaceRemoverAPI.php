@@ -4,7 +4,7 @@ header("Access-Control-Allow-Origin: *");
 
 $string = $_GET["string"];
 if (strlen($string) == 0){
-    $new_word = "Invalid input";
+    $new_word = "Invalid";
 }else{
     $new_word = trim($string);
 }

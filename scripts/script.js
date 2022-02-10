@@ -69,7 +69,11 @@ async function fetchTrimApi() {
         );
         const data = await response.json();
         console.log(data);
-        trimResult.textContent = data.newString;
+        if (data.newString == "Invalid"){
+            alert("Invalid input");
+        }else{
+            trimResult.textContent = data.newString;    
+        }
         return data   
     }catch(error){
         console.log(error);
