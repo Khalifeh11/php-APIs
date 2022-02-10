@@ -101,7 +101,7 @@ async function fetchPasswordApi() {
         if (data.viablePassword == false && passwordInput.length < 8){
             alert("password should contain at least 8 characters");
         }else if(data.viablePassword == true){
-            passwordCheck.textContent = "Valid Password";
+            passwordCheck.textContent = "Success";
         }else{
             alert("Password should contain at least 1 digit and 1 alphabet");
         }
