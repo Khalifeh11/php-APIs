@@ -42,7 +42,11 @@ async function fetchPalindromeAPI() {
         );
         const data = await response.json();
         console.log(data);
-        palindromeResult.textContent = data.Palindrome 
+        if (data.palindrome == "Invalid"){
+            alert("Invalid input");
+        }else{
+            palindromeResult.textContent = data.palindrome;
+        }
         return data   
     }catch(error){
         console.log(error);
