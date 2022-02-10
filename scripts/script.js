@@ -89,13 +89,24 @@ passwordButton.addEventListener("click", function(e){
 
 
 async function fetchPasswordApi() {
-    try{    
+    try{
+        //fetching response object
         const response = await fetch(
             `http://localhost/php-assignment/APIs/passwordAPI.php?password=${passwordInput.value}`,
         );
+        // turning response object into json 
         const data = await response.json();
-        passwordCheck.textContent = data.viablePassword;
-        return data   
+        console.log(data);
+        //in passwordAPI.php if password input length < 8 viable password = 1
+        if (data.viablePassword == false && passwordInput.length < 8){
+            alert("password should contain at least 8 characters");
+        }else if(data.viablePassword == true){
+            passwordCheck.textContent = "Valid Password";
+        }else{
+            alert("Password should contain at least 1 digit and 1 alphabet");
+        }
+        return data
+    //catching in case of response error
     }catch(error){
         console.log(error);
         throw "password api Error"
