@@ -17,7 +17,14 @@ async function fetchComputeAPI() {
             `http://localhost/php-assignment/APIs/computeAPI.php?x=${xInput.value}&y=${yInput.value}`,
         );
         const data = await response.json();
-        result.textContent = data.compute
+        console.log(data);
+        if (data.x == "Invalid"){
+            alert("Invalid x input")
+        }if (data.y == "Invalid"){
+            alert("Invalid y input")
+        }else{
+            result.textContent = data.compute
+        }
         return data   
     }catch(error){
         console.log(error);
